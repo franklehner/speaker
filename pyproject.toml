@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools >= 69.0", "wheel"]
+build_backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["speaker"]
+
+[project]
+name = "speaker"
+requires-python = ">= 3.10"
+dynamic = ["version"]
+dependencies = [
+    "click",
+    "pydantic",
+]
